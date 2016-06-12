@@ -1,0 +1,258 @@
+/*************************************************************
+                    Mobile Styles Under 700px
+**************************************************************/
+/*************************************
+            General Styles
+*************************************/
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #555;
+  background: url(../images/noisy.png);
+  background-attachment: fixed;
+  text-align: center; }
+
+*:focus {
+  outline: 0; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+a, a:hover, a.button {
+  text-decoration: none;
+  color: white; }
+
+.hide {
+  display: none; }
+
+/*************************************
+          Social Media Styles
+*************************************/
+.social-media {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10; }
+
+.social-media i {
+  display: block; }
+
+.social-media i:hover {
+  color: #FF7300; }
+
+.fa-chevron-up {
+  position: fixed;
+  bottom: 10px; }
+
+/*************************************
+        Banner Section Styles
+*************************************/
+.hero {
+  background-color: black;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/az.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+  background-attachment: fixed; }
+
+.hero-content {
+  padding: 30% 10%;
+  font-size: 150%;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+.hero-text {
+  padding-bottom: 20px; }
+
+.hero-content h1 {
+  font-size: 300%; }
+
+.hero-content h2 {
+  font-size: 200%; }
+
+.hero-content .button {
+  font-size: .50em; }
+
+.button {
+  width: 200px;
+  height: 80px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+  margin: 20px; }
+
+.button:hover {
+  background-color: #FF7300;
+  color: black;
+  border: 2px solid transparent; }
+
+/*************************************
+          Portfolio Styles
+*************************************/
+.portfolio-wrapper {
+  background-color: gray;
+  background: url(../images/stardust.png);
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  width: 100%;
+  text-align: center;
+  overflow: hidden; }
+
+.portfolio-item-hide {
+  display: none; }
+
+.portfolio-item {
+  min-height: 250px;
+  overflow: auto;
+  margin: 10px;
+  width: 95%;
+  text-align: center;
+  background-color: rgba(4, 4, 4, 0.2);
+  border-radius: 10px;
+  padding: 20px 10px; }
+
+.portfolio-item img {
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px; }
+
+.portfolio-item h3, .portfolio-item p, .portfolio-item a {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.portfolio-item h3 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  color: #FF7300; }
+
+.portfolio-item p {
+  color: white;
+  font-size: 125%;
+  margin-bottom: 30px; }
+
+/*************************************
+          About Section Styles
+*************************************/
+main {
+  margin: 0 10%;
+  padding: 20px;
+  clear: both;
+  min-height: 1000px;
+  background-color: transparent;
+  overflow: auto; }
+
+main h3 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center; }
+
+main a {
+  color: orange; }
+
+main p {
+  font-size: 1.3em;
+  font-weight: bolder; }
+
+main div {
+  float: left;
+  padding: 10px; }
+
+.about-content-hide {
+  display: none; }
+
+.about {
+  text-align: left;
+  font-size: 125%;
+  font-weight: bolder; }
+
+.about a {
+  color: #FF7300; }
+
+.about a:hover {
+  color: black; }
+
+.skill-wrapper {
+  width: 100%;
+  text-align: center; }
+
+.skill-content {
+  float: left;
+  width: 100%; }
+
+div.clear {
+  clear: both;
+  margin: 0;
+  padding: 0; }
+
+main li {
+  list-style-type: none;
+  font-size: 1.3em;
+  padding: 10px; }
+
+/*************************************
+            Footer Styles
+*************************************/
+footer {
+  padding: 10px;
+  min-height: 200px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  overflow: auto; }
+
+.footer-content-hide {
+  display: none; }
+
+footer h3, h4, h5 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center; }
+
+footer h4 {
+  font-size: 2em;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: inline; }
+
+footer h5 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0 25px 0 0;
+  text-align: left;
+  display: inline; }
+
+/*************************************************************
+                    Desktop Styles Over 700px
+**************************************************************/
+@media (min-width: 900px) {
+  .hero-content {
+    padding: 12%;
+    font-size: 350%; }
+  .portfolio-item img {
+    float: left;
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 40px; }
+  .portfolio-item p {
+    text-align: left; }
+  .button {
+    width: 110px;
+    height: 50px;
+    margin: 30px; }
+  .skill-content {
+    float: left;
+    width: 30%; } }

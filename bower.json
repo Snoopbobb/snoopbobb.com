@@ -1,0 +1,19 @@
+{
+  "name": "30andb",
+  "version": "0.0.0",
+  "homepage": "http://30andb.com",
+  "description": "Personal portfolio",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "animate.css": "~3.3.0",
+    "fontawesome": "~4.3.0"
+  }
+}
