@@ -4,6 +4,7 @@ snoopbobb.com-error_log
 **/.DS_Store
 roundcube/
 *.env
+.htaccess
 baseballscores/
 calculator/
 dodgers/
