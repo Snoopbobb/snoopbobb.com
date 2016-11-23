@@ -5,6 +5,8 @@ snoopbobb.com-error_log
 roundcube/
 *.env
 .htaccess
+node_modules/
+bower_components/
 baseballscores/
 calculator/
 dodgers/
