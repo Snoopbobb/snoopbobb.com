@@ -171,12 +171,18 @@ a, a:hover, a.button {
           About Section Styles
 *************************************/
 main {
-  margin: 0 10%;
+
   padding: 20px;
   clear: both;
   min-height: 1000px;
-  background-color: transparent;
-  overflow: auto; 
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/gc.jpg);
+  overflow: auto;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+  background-attachment: fixed; 
 }
 
 main h3 {
