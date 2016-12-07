@@ -7,7 +7,7 @@ roundcube/
 .htaccess
 node_modules/
 blog/
-blog_2/
+blog_orig/
 bower_components/
 baseballscores/
 calculator/
