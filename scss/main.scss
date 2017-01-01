@@ -34,8 +34,8 @@ h1, h2 {
 }
 
 a, a:hover, a.button {
-  text-decoration: none;
   color: white;
+  text-decoration: none !important;
 }
 
 .hide {
@@ -52,11 +52,12 @@ a, a:hover, a.button {
   z-index: 10; 
 }
 
-.social-media i {
-  display: block; 
+.social-media i , .social-media i:visited {
+  color: white;
+  display: block;
 }
 
-.social-media i:hover {
+.social-media i:hover, .social-media i:active {
   color: $orange; 
 }
 
@@ -130,8 +131,8 @@ a, a:hover, a.button {
           Portfolio Styles
 *************************************/
 .portfolio-wrapper {
-  background-color: gray;
   background: url(../images/stardust.png);
+  background-color: gray;
   background-attachment: fixed;
   background-repeat: repeat-x;
   width: 100%;
