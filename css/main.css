@@ -37,7 +37,7 @@ a, a:hover, a.button {
 .social-media {
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 20px;
   z-index: 10; }
 
 .social-media i, .social-media i:visited {
@@ -62,10 +62,10 @@ a, a:hover, a.button {
   color: white;
   text-align: center;
   font-family: Montserrat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding: 40px; }
 
 .hero-content {
-  padding: 30% 10%;
   font-size: 150%;
   font-weight: bolder;
   text-transform: uppercase; }
@@ -83,25 +83,19 @@ a, a:hover, a.button {
   font-size: .50em; }
 
 .button {
-  width: 200px;
-  height: 80px;
   background-color: transparent;
   border-radius: 10px;
   border: 2px solid white;
   color: white;
   text-transform: uppercase;
   font-weight: bolder;
-  padding: 10px;
   text-align: center;
-  margin: 20px; }
+  margin: 30px; }
 
 .button:hover {
   background-color: #FF7300;
   color: black;
   border: 2px solid transparent; }
-
-#blog-button {
-  padding: 10px 40px 10px 40px; }
 
 /*************************************
           Portfolio Styles
@@ -152,11 +146,7 @@ a, a:hover, a.button {
           About Section Styles
 *************************************/
 main {
-  padding: 20px;
-  clear: both;
-  min-height: 1000px;
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/gc.jpg);
-  overflow: auto;
   background-size: cover;
   min-height: 100vh;
   color: white;
@@ -177,18 +167,19 @@ main p {
   font-size: 1.3em;
   font-weight: bolder; }
 
-main div {
-  float: left;
-  padding: 10px; }
+.about-wrapper {
+  background-color: #CCCCCC;
+  padding: 0 40px; }
 
 .about-content-hide {
   display: none; }
 
 .about {
+  color: black;
+  padding: 40px;
   text-align: left;
   font-size: 125%;
   font-weight: bolder;
-  margin: 10px;
   line-height: 1.5; }
 
 .about p {
@@ -200,14 +191,6 @@ main div {
 .about a:hover {
   color: white; }
 
-.skill-wrapper {
-  width: 100%;
-  text-align: center; }
-
-.skill-content {
-  float: left;
-  width: 100%; }
-
 div.clear {
   clear: both;
   margin: 0;
@@ -217,6 +200,9 @@ main li {
   list-style-type: none;
   font-size: 1.3em;
   padding: 10px; }
+
+.skills {
+  padding: 40px; }
 
 /*************************************
             Footer Styles
@@ -263,7 +249,7 @@ footer #copy {
 **************************************************************/
 @media (min-width: 900px) {
   .hero-content {
-    padding: 12%;
+    padding: 100px;
     font-size: 350%; }
   .portfolio-item img {
     float: left;
@@ -273,10 +259,6 @@ footer #copy {
     margin-right: 40px; }
   .portfolio-item p {
     text-align: left; }
-  .button {
-    width: 110px;
-    height: 50px;
-    margin: 30px; }
   .skill-content {
     float: left;
     width: 30%; } }
