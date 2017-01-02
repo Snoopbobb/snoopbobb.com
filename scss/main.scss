@@ -78,11 +78,10 @@ a, a:hover, a.button {
   text-align: center;
   font-family: Montserrat;
   background-attachment: fixed; 
-  padding: 40px;
+  padding: 100px 40px;
 }
 
 .hero-content {
-  font-size: 150%;
   font-weight: bolder;
   text-transform: uppercase; 
 }
@@ -91,16 +90,16 @@ a, a:hover, a.button {
   padding-bottom: 20px;
 }
 
-.hero-content h1 {
-  font-size: 300%; 
+.hero-text h1 {
+  font-size: 4em;
 }
 
-.hero-content h2 {
-  font-size: 200%; 
+.hero-text h2 {
+  font-size: 3em;
 }
 
 .hero-content .button {
-  font-size: .50em; 
+  font-size: 20px; 
 }
 
 .button {
@@ -161,6 +160,9 @@ a, a:hover, a.button {
 }
 
 .portfolio-item h3 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 800;
   padding-top: 20px;
   margin-bottom: 10px;
   color: $orange; 
@@ -168,7 +170,6 @@ a, a:hover, a.button {
 
 .portfolio-item p {
   color: white;
-  font-size: 125%;
   margin-bottom: 30px; 
 }
 
@@ -186,9 +187,9 @@ main {
 }
 
 main h3 {
-  font-size: 4em;
+  font-size: 5em;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 800;
   text-align: center; 
 }
 
@@ -212,9 +213,8 @@ main p {
 
 .about {
   color: black;
-  padding: 40px;
+  padding: 60px;
   text-align: left;
-  font-size: 125%;
   font-weight: bolder;
   line-height: 1.5;
 }
@@ -239,8 +239,9 @@ div.clear {
 
 main li {
   list-style-type: none;
-  font-size: 1.3em;
-  padding: 10px; 
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 800;
 }
 
 .skills {
@@ -298,14 +299,18 @@ footer #copy {
                     Desktop Styles Over 700px
 **************************************************************/
 @media #{$mobile} {
-  .hero-content {
-    padding: 100px;
-    font-size: 350%;
+
+  .hero-text h1 {
+    font-size: 10em;
+  }
+
+  .hero-text h2 {
+    font-size: 8em;
   }
 
   .portfolio-item img {
     float: left;
-    width: 40%;
+    width: 60%;
     border-radius: 10px;
     padding: 10px;
     margin-right: 40px;
