@@ -6,7 +6,6 @@ roundcube/
 *.env
 .htaccess
 node_modules/
-blog/
 blog_orig/
 bower_components/
 baseballscores/
