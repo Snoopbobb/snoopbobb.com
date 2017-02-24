@@ -16,40 +16,40 @@ $(function(){
 	});
 
 
-	// Portfolio slide in during scroll down
-	$(window).scroll(function() {    
-    	var scroll = $(window).scrollTop();
+	// // Portfolio slide in during scroll down
+	// $(window).scroll(function() {    
+ //    	var scroll = $(window).scrollTop();
 
-	    if (scroll >= 350) {
-	        //clearHeader, not clearheader - caps H
-	        $(".portfolio-item-hide").removeClass("portfolio-item-hide").addClass("portfolio-item animated slideInLeft");
-	    }
+	//     if (scroll >= 350) {
+	//         //clearHeader, not clearheader - caps H
+	//         $(".portfolio-item-hide").removeClass("portfolio-item-hide").addClass("portfolio-item animated slideInLeft");
+	//     }
 
-	});
-
-
-	// About slide in during scroll down
-	$(window).scroll(function() {    
-    	var scroll = $(window).scrollTop();
-
-	    if (scroll >= 2600) {
-	        //clearHeader, not clearheader - caps H
-	        $(".about-content-hide").removeClass("about-content-hide").addClass("animated slideInRight");
-	    }
-
-	});
+	// });
 
 
-	// Footer slide in during scrool down
-	$(window).scroll(function() {    
-    	var scroll = $(window).scrollTop();
+	// // About slide in during scroll down
+	// $(window).scroll(function() {    
+ //    	var scroll = $(window).scrollTop();
 
-	    if (scroll >= 3530) {
-	        //clearHeader, not clearheader - caps H
-	        $(".footer-content-hide").removeClass("footer-content-hide").addClass("animated bounceInUp");
-	    }
+	//     if (scroll >= 2600) {
+	//         //clearHeader, not clearheader - caps H
+	//         $(".about-content-hide").removeClass("about-content-hide").addClass("animated slideInRight");
+	//     }
 
-	});
+	// });
+
+
+	// // Footer slide in during scroll down
+	// $(window).scroll(function() {    
+ //    	var scroll = $(window).scrollTop();
+
+	//     if (scroll >= 3530) {
+	//         //clearHeader, not clearheader - caps H
+	//         $(".footer-content-hide").removeClass("footer-content-hide").addClass("animated bounceInUp");
+	//     }
+
+	// });
 
 
 	// Smooth scroll to inner page links
