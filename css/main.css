@@ -113,7 +113,7 @@ ul {
   overflow: hidden; }
 
 .portfolio-item-hide {
-  display: none; }
+  display: block; }
 
 .portfolio-item {
   min-height: 250px;
