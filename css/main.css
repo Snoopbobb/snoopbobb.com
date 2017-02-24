@@ -229,7 +229,7 @@ footer {
   overflow: auto; }
 
 .footer-content-hide {
-  display: none; }
+  display: block; }
 
 footer h3, h4, h5 {
   font-size: 3em;
