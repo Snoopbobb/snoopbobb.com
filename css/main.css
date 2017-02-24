@@ -15,7 +15,8 @@ body {
   background-color: #555;
   background: url(../images/noisy.png);
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
 
 *:focus {
   outline: 0; }
