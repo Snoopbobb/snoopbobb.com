@@ -80,7 +80,7 @@
 
 pre {
     background: url("./blueprint-dark.png") top center #fafbfc;
-    border-left: 5px solid #558abb;
+    border-left: 5px solid red;
     color: #4d4e53;
     font-family: Consolas,Monaco,'Andale Mono',monospace;
     font-weight: 400;
