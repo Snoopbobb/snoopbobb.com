@@ -1,28 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Snoop Bobby Bloggs</title>
-  
-  <link href="/blog/atom.xml" rel="self"/>
-  
-  <link href="http://snoopbobb.com/blog/"/>
-  <updated>2017-03-26T22:08:42.000Z</updated>
-  <id>http://snoopbobb.com/blog/</id>
-  
-  <author>
-    <name>Snoopbobb</name>
-    
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>How to Use JavaScript Promises</title>
-    <link href="http://snoopbobb.com/blog//JavaScript-Promises"/>
-    <id>http://snoopbobb.com/blog//JavaScript-Promises</id>
-    <published>2017-03-26T21:50:37.000Z</published>
-    <updated>2017-03-26T22:08:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="The-Background"><a href="#The-Background" class="headerlink" title="The Background"></a>The Background</h2><p>So I had a little problem at work last week. We had built a new api call that would look up dates and times available for appointments that our clients can make. We have different locations each with different appointment times. The api call was created because our dates and times were input statically into our files, and with the growth of the site, it was beginning to be needed in other parts of our code, increasing un-maintainability and slowly becoming a mini-nightmare. It needed to be kept in one place in case any times are changed and to keep the appointment information consistent throughout the site.</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><meta name="author" content="Snoopbobb"><link rel="icon" href="/blog/hexo.png"><title>Snoop Bobby Bloggs</title><meta name="description"><link rel="alternate" type="application/rss+xml" title="Snoop Bobby Bloggs" href="/blog/atom.xml"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="/blog/css/bootstrap.min.css"><link rel="stylesheet" href="/blog/css/main.css"><link rel="stylesheet" href="/blog/css/highlight.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+</head><body><nav class="navbar navbar-default navbar-fixed-top navbar-custom"><div class="container-fluid"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#main-navbar" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/blog/" class="navbar-brand">Snoop Bobby Bloggs</a></div><div id="main-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="/blog/archives">Archive</a></li><li><a href="https://snoopbobb.com">Portfolio</a></li></ul></div><div class="avatar-container"><div class="avatar-img-border"><a href="/blog/"><img src="/blog/hexo.png" class="avatar-img"></a></div></div></div></nav><header class="header-section"><div class="intro-header no-img"><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>How to Use JavaScript Promises</h1><p class="post-meta">Posted on Mar 26 2017 · <a href="/blog/tags/JavaScript-·-Web-Developmet/" class="tag post-meta">JavaScript · Web Developmet</a></p></div></div></div></div></div></header><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><article role="main" class="blog-post"><h2 id="The-Background"><a href="#The-Background" class="headerlink" title="The Background"></a>The Background</h2><p>So I had a little problem at work last week. We had built a new api call that would look up dates and times available for appointments that our clients can make. We have different locations each with different appointment times. The api call was created because our dates and times were input statically into our files, and with the growth of the site, it was beginning to be needed in other parts of our code, increasing un-maintainability and slowly becoming a mini-nightmare. It needed to be kept in one place in case any times are changed and to keep the appointment information consistent throughout the site.</p>
 <h2 id="The-Problem"><a href="#The-Problem" class="headerlink" title="The Problem"></a>The Problem</h2><p>The problem was, that when I made the AJAX call to retrieve the data, by the time it returned it, the rest of my JavaScript was already on to the next steps. This is what makes asynchronous JavaScript so neat, but at the sametime, makes it a little more difficult to get it to do what you want. </p>
 <h2 id="The-Hunt"><a href="#The-Hunt" class="headerlink" title="The Hunt"></a>The Hunt</h2><p>So to Google I went, to search for an easy solution. The thing was, most of the search results I saw for this problem, advised the developer to set their async to false. This stops the JavaScript from running, while the AJAX retrieves the data, returns it, and then the JavaScript would continue. It’s so simple…and it’s so wrong! With this solution you will get a warning in your dev tools’ console, that asynchronous set to false is deprecated. Doing this will cause your page to ‘hang’, the user can’t do anything on the page until the AJAX call is completed. How long will that take? Nobody knows, it could be a second or two and unnoticeable to the user, or it could be 30 seconds, and very noticeable. This is bad user-experience, and is highly frowned upon in today’s industry. If you are still doing this, I feel your pain. It is super simple, but it’s not the correct way to handle this in today’s JS world. So what do we do? Well, we can use a callback function which can get messy, but thanks to ES2015, we can now use a promise.</p>
 <p>What is a promise? Well, Mozilla defines it like this:</p>
@@ -190,57 +167,26 @@ getStarWarsPeople().then(processStarWarsPeople);
     &lt;/script&gt;
 &lt;/html&gt;
 </code></pre><h2 id="The-Conclusion"><a href="#The-Conclusion" class="headerlink" title="The Conclusion"></a>The Conclusion</h2><p>I really hope you learned something from this article. JavaScript promises are difficult to understand, at least for me. Remember, keep your JavaScript asynchronous, and let your users be happy! </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;The-Background&quot;&gt;&lt;a href=&quot;#The-Background&quot; class=&quot;headerlink&quot; title=&quot;The Background&quot;&gt;&lt;/a&gt;The Background&lt;/h2&gt;&lt;p&gt;So I had a little prob
-    
-    </summary>
-    
-    
-      <category term="JavaScript · Web Developmet" scheme="http://snoopbobb.com/blog/tags/JavaScript-%C2%B7-Web-Developmet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello, World!</title>
-    <link href="http://snoopbobb.com/blog//Hello-World"/>
-    <id>http://snoopbobb.com/blog//Hello-World</id>
-    <published>2017-01-01T21:15:00.000Z</published>
-    <updated>2017-01-01T21:36:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to Snoop Bobby Bloggs and Happy New Year! What better way to start a new year than to read a new blog? There’s not enough of them out there you know. Anyways, my name is Bob or as my highschool classmates used to call me, Snoopbobb. I am a web developer in AZ. I decided to create this blog in order to share some of my thoughts with you. I’ve been married for over 10 years and I’m sure my wife is tired of me spewing whatever is in my head to her all of the time, so this will be a good break for her. Now I’ll just make her go read my blog whenever I get a crazy thought together lol.</p>
-<p>A little more background about myself. I grew up in Colorado and moved to Arizona a little over 3 years ago. We just got tired of the cold. I would rather be hot than cold I guess, but some of my friends in Colorado think the heat is ridiculous, which it can be at times, but we just stay under the AC in the summer. I am a huge sports fan and was raised on the Broncos and Nuggets. I never watched hockey growing up, but when Colorado got the Avalanche, I started to follow them. It was pretty easy to get into as they won their first Stanley Cup. Colorado’s first ever World Championship. I grew up playing basketball, a little football, and a lot of baseball. I love baseball. I can watch any two teams play at any time, but when Colorado was awarded the Rockies, I of course bought a Rockies cap and tried to watch every game I could. The Rockies are a very frustrating team for me. I’m sure you will hear a lot about my feelings on them in the coming weeks, but things are looking pretty good for them this season. Although it is only January and teams aren’t even finished setting rosters for Spring Training. </p>
-<p>Anyways, I don’t want to tell you everything about me on our first date. I have been known to take George Castanza’s advice from time to time, and I’ll start with some right now. ‘Always leave them wanting more.’ Hopefully you’ll enjoy what you find here. I plan on writing a lot about sports and whatever else pops into my head.</p>
-<p>Thanks for stopping by, until next time. Of course, I can’t forget to add this, Go Broncos! New year and new beginnings for them as well.</p>
-<hr>
-<p>What’s all this about ‘Hello, World!’?<br><a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" target="_blank" rel="external">Read More About It</a></p>
-<!-- ## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a> –&gt;</p>
--->]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to Snoop Bobby Bloggs and Happy New Year! What better way to start a new year than to read a new blog? There’s not enough of them
-    
-    </summary>
-    
-      <category term="general" scheme="http://snoopbobb.com/blog/categories/general/"/>
-    
-    
-      <category term="Happy New Year · 2017" scheme="http://snoopbobb.com/blog/tags/Happy-New-Year-%C2%B7-2017/"/>
-    
-  </entry>
-  
-</feed>
+</article><ul class="pager blog-pager"><li class="next"><a href="/blog/Hello-World" data-toggle="tooltip" data-placement="top" title="Hello, World!">Next Post →</a></li></ul><div class="disqus-comments"><div class="comments"><div id="disqus_thread"></div></div></div><script>var url_parts = window.location.href.split("?");
+var disqus_url = url_parts[0];
+(function () {
+    console.log("enter disqus");
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = "//snoopbobb.disqus.com/embed.js";
+    (document.head || d.body ).appendChild(dsq);
+})();</script></div></div></div><footer><div class="container beautiful-jekyll-footer"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a href="https://github.com/snoopbobb" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-github"></i></span></a></li><li><a href="/atom.xml" title="RSS"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-rss"></i></span></a></li><li><a href="https://twitter.com/snoopbobb4" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-twitter"></i></span></a></li><li><a href="mailto:snoopbobb4@gmail.com" title="Email me"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-envelope"></i></span></a></li></ul><p class="copyright text-muted">© Snoopbobb • 2017 • <a href="mailto:undefined"></a>
+</p><p class="theme-by text-muted">Stuff | Sports | Code</p></div></div></div></footer><script src="/blog/js/jquery-1.11.2.min.js"></script><script src="/blog/js/bootstrap.min.js"></script><script src="/blog/js/main.js"></script><script src="/blog/js/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-46721230-12', 'auto');
+ga('send', 'pageview');</script></body></html>

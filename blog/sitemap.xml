@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://snoopbobb.com/blog/blog//JavaScript-Promises</loc>
+    
+    <lastmod>2017-03-26T22:08:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://snoopbobb.com/blog/blog//Hello-World</loc>
     
     <lastmod>2017-01-01T21:36:25.000Z</lastmod>
