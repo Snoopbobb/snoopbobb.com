@@ -8,10 +8,7 @@
 <p><sup>1</sup> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></p>
 </blockquote>
 <p>Now when I first read that to myself, I said, huh? So just for those like myself who might get ‘disrespected by the use of big words’, see Kevin Hart in <em>40 Year Old Virgin</em>, a promise is basically a holder that has no value when first initialized, but will have a value sometime later, if everything is successful. Now that we understand that, how do we use them?</p>
-<h2 id="One-More-Problem"><a href="#One-More-Problem" class="headerlink" title="One More Problem"></a>One More Problem</h2><p>Promises are awesome, except they will not work in Internet Explorer, even IE11. Try not to act surprised. Thankfully, there is a very easy solution to get them to work in IE. You bring in <a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank" rel="external">Blubird.js</a>. It’s a promise library and only needs to be brought in before you start using your promises.</p>
-<pre><code>&lt;script src=&quot;//cdn.jsdelivr.net/bluebird/latest/bluebird.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;The rest of your JS that uses promises&lt;/script&gt;
-</code></pre><h2 id="The-Confusion"><a href="#The-Confusion" class="headerlink" title="The Confusion"></a>The Confusion</h2><p>If you Google ‘how does a promise work?’, you’ll see a lot of this out there:</p>
+<h2 id="The-Confusion"><a href="#The-Confusion" class="headerlink" title="The Confusion"></a>The Confusion</h2><p>If you Google ‘how does a promise work?’, you’ll see a lot of this out there:</p>
 <pre><code>let myFirstPromise = new Promise((resolve, reject) =&gt; {
     //We call resolve(...) when what we were doing async succeeded, and reject(...) when it failed.
     //In this example, we use setTimeout(...) to simulate async code. 
@@ -169,6 +166,9 @@ getStarWarsPeople().then(processStarWarsPeople);
         }
     &lt;/script&gt;
 &lt;/html&gt;
+</code></pre><h2 id="One-More-Problem"><a href="#One-More-Problem" class="headerlink" title="One More Problem"></a>One More Problem</h2><p>Promises are awesome, except they will not work in Internet Explorer, even IE11. Try not to act surprised. Thankfully, there is a very easy solution to get them to work in IE. You bring in <a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank" rel="external">Blubird.js</a>. It’s a promise library and only needs to be brought in before you start using your promises.</p>
+<pre><code>&lt;script src=&quot;//cdn.jsdelivr.net/bluebird/latest/bluebird.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;The rest of your JS that uses promises&lt;/script&gt;
 </code></pre><h2 id="The-Conclusion"><a href="#The-Conclusion" class="headerlink" title="The Conclusion"></a>The Conclusion</h2><p>I really hope you learned something from this article. JavaScript promises are difficult to understand, at least for me. Remember, keep your JavaScript asynchronous, and let your users be happy! </p>
 </article><ul class="pager blog-pager"><li class="next"><a href="/blog/Hello-World" data-toggle="tooltip" data-placement="top" title="Hello, World!">Next Post →</a></li></ul><div class="disqus-comments"><div class="comments"><div id="disqus_thread"></div></div></div><script>var url_parts = window.location.href.split("?");
 var disqus_url = url_parts[0];
