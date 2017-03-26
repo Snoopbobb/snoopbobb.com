@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Star Wars People</title>
+	<style>
+		button {
+			cursor: pointer;
+			font-size: 15px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<button id="get-people">Get Star Wars People</button>
+		<button id="while-ajax">Click Me While AJAX Loads</button>
+	</div>
+</body>
+<script>
+	// This is just a generic AJAX call that returns a Promise
+	function ajaxCall(url, methodType){
+		var promiseObj = new Promise(function(resolve, reject){
+			var xhr = new XMLHttpRequest();
+			xhr.open(methodType, url, false);
+			xhr.send();
+			xhr.onreadystatechange = function(){
+				if (xhr.readyState === 4){
+					if (xhr.status === 200){
+						// console.log("xhr done successfully");
+						var resp = xhr.responseText;
+						var respJson = JSON.parse(resp);
+						resolve(respJson);
+					} else {
+						reject(xhr.status);
+						// console.log("xhr failed");
+					}
+				} else {
+					// console.log("xhr processing going on");
+				}
+			}
+			// console.log("request sent succesfully");
+		});
+		return promiseObj;
+	}
+	
+	// We are just setting up the url for the AJAX call
+	function getStarWarsPeople(){
+		var url = 'http://swapi.co/api/people/?format=json';
+
+		return ajaxCall(url, 'GET');
+	}
+
+	// Process the data from the AJAX call and put the names in an unordered list
+	function processStarWarsPeople(people) {
+		var people = people.results;
+		var max = people.length;
+		var input = document.getElementById('content');
+
+		for (var i=0; i<max; i++){
+			var ul = document.createElement('ul');
+		    var li = document.createElement('li');
+		    var a = document.createElement("a");
+		    
+		    a.href = people[i].url;
+		    a.text = people[i].name;    
+		    
+		    li.appendChild(a);
+		    ul.appendChild(li);
+		    input.appendChild(ul);
+		}
+	}
+
+	function stuffWhileAjaxWorks(){
+		console.log('stuff while Ajax works');
+		var button = document.getElementById('while-ajax');
+		var text = button.innerHTML;
+		if (text == 'Click Me While AJAX Loads') {
+			button.innerHTML ='The Button Text Changed While Ajax Is Going!';
+		} else {
+			button.innerHTML = 'Click Me While AJAX Loads';
+		}
+	}
+
+	var el = document.getElementById("get-people");
+	el.onclick = function() {
+		getStarWarsPeople().then(processStarWarsPeople);
+	}
+
+	var el = document.getElementById("while-ajax");
+	el.onclick = function() {
+		stuffWhileAjaxWorks();
+	}
+</script>
+</html>
