@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://snoopbobb.com/blog/"/>
-  <updated>2017-03-26T22:27:00.000Z</updated>
+  <updated>2017-03-26T22:28:46.000Z</updated>
   <id>http://snoopbobb.com/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://snoopbobb.com/blog//JavaScript-Promises"/>
     <id>http://snoopbobb.com/blog//JavaScript-Promises</id>
     <published>2017-03-26T21:50:37.000Z</published>
-    <updated>2017-03-26T22:27:00.000Z</updated>
+    <updated>2017-03-26T22:28:46.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="The-Background"><a href="#The-Background" class="headerlink" title="The Background"></a>The Background</h2><p>So I had a little problem at work last week. We had built a new api call that would look up dates and times available for appointments that our clients can make. We have different locations each with different appointment times. The api call was created because our dates and times were input statically into our files, and with the growth of the site, it was beginning to be needed in other parts of our code, increasing un-maintainability and slowly becoming a mini-nightmare. It needed to be kept in one place in case any times are changed and to keep the appointment information consistent throughout the site.</p>
 <h2 id="The-Problem"><a href="#The-Problem" class="headerlink" title="The Problem"></a>The Problem</h2><p>The problem was, that when I made the AJAX call to retrieve the data, by the time it returned it, the rest of my JavaScript was already on to the next steps. This is what makes asynchronous JavaScript so neat, but at the sametime, makes it a little more difficult to get it to do what you want. </p>
@@ -31,7 +31,7 @@
 <p><sup>1</sup> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></p>
 </blockquote>
 <p>Now when I first read that to myself, I said, huh? So just for those like myself who might get ‘disrespected by the use of big words’, see Kevin Hart in <em>40 Year Old Virgin</em>, a promise is basically a holder that has no value when first initialized, but will have a value sometime later, if everything is successful. Now that we understand that, how do we use them?</p>
-<h2 id="One-More-Problem"><a href="#One-More-Problem" class="headerlink" title="One More Problem"></a>One More Problem</h2><p>Promises are awesome, except they will not work in Internet Explorer, even IE11. Try not to act surprised. Thankfully, there is a very easy solution to get them to work in IE. You bring in Blubird.js. It’s a promise library and only needs to be brought in before you start using your promises.</p>
+<h2 id="One-More-Problem"><a href="#One-More-Problem" class="headerlink" title="One More Problem"></a>One More Problem</h2><p>Promises are awesome, except they will not work in Internet Explorer, even IE11. Try not to act surprised. Thankfully, there is a very easy solution to get them to work in IE. You bring in <a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank" rel="external">Blubird.js</a>. It’s a promise library and only needs to be brought in before you start using your promises.</p>
 <pre><code>&lt;script src=&quot;//cdn.jsdelivr.net/bluebird/latest/bluebird.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;The rest of your JS that uses promises&lt;/script&gt;
 </code></pre><h2 id="The-Confusion"><a href="#The-Confusion" class="headerlink" title="The Confusion"></a>The Confusion</h2><p>If you Google ‘how does a promise work?’, you’ll see a lot of this out there:</p>
