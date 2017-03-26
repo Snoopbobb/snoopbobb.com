@@ -213,7 +213,7 @@ getStarWarsPeople().then(processStarWarsPeople);
     <link href="http://snoopbobb.com/blog//Hello-World"/>
     <id>http://snoopbobb.com/blog//Hello-World</id>
     <published>2017-01-01T21:15:00.000Z</published>
-    <updated>2017-01-01T21:36:25.000Z</updated>
+    <updated>2017-03-26T22:37:44.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to Snoop Bobby Bloggs and Happy New Year! What better way to start a new year than to read a new blog? There’s not enough of them out there you know. Anyways, my name is Bob or as my highschool classmates used to call me, Snoopbobb. I am a web developer in AZ. I decided to create this blog in order to share some of my thoughts with you. I’ve been married for over 10 years and I’m sure my wife is tired of me spewing whatever is in my head to her all of the time, so this will be a good break for her. Now I’ll just make her go read my blog whenever I get a crazy thought together lol.</p>
 <p>A little more background about myself. I grew up in Colorado and moved to Arizona a little over 3 years ago. We just got tired of the cold. I would rather be hot than cold I guess, but some of my friends in Colorado think the heat is ridiculous, which it can be at times, but we just stay under the AC in the summer. I am a huge sports fan and was raised on the Broncos and Nuggets. I never watched hockey growing up, but when Colorado got the Avalanche, I started to follow them. It was pretty easy to get into as they won their first Stanley Cup. Colorado’s first ever World Championship. I grew up playing basketball, a little football, and a lot of baseball. I love baseball. I can watch any two teams play at any time, but when Colorado was awarded the Rockies, I of course bought a Rockies cap and tried to watch every game I could. The Rockies are a very frustrating team for me. I’m sure you will hear a lot about my feelings on them in the coming weeks, but things are looking pretty good for them this season. Although it is only January and teams aren’t even finished setting rosters for Spring Training. </p>
@@ -244,7 +244,9 @@ getStarWarsPeople().then(processStarWarsPeople);
       <category term="general" scheme="http://snoopbobb.com/blog/categories/general/"/>
     
     
-      <category term="Happy New Year · 2017" scheme="http://snoopbobb.com/blog/tags/Happy-New-Year-%C2%B7-2017/"/>
+      <category term="Happy New Year" scheme="http://snoopbobb.com/blog/tags/Happy-New-Year/"/>
+    
+      <category term="2017" scheme="http://snoopbobb.com/blog/tags/2017/"/>
     
   </entry>
   
