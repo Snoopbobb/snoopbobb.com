@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Snoop Bobby Bloggs</title>
   
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://snoopbobb.com/blog/"/>
+  <link href="http://snoopbobb.com/"/>
   <updated>2017-03-27T17:26:57.000Z</updated>
-  <id>http://snoopbobb.com/blog/</id>
+  <id>http://snoopbobb.com/</id>
   
   <author>
     <name>Snoopbobb</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>How to Use JavaScript Promises</title>
-    <link href="http://snoopbobb.com/blog//JavaScript-Promises"/>
-    <id>http://snoopbobb.com/blog//JavaScript-Promises</id>
+    <link href="http://snoopbobb.com//JavaScript-Promises"/>
+    <id>http://snoopbobb.com//JavaScript-Promises</id>
     <published>2017-03-26T21:50:37.000Z</published>
     <updated>2017-03-27T17:26:57.000Z</updated>
     
@@ -202,16 +202,16 @@ getStarWarsPeople().then(processStarWarsPeople);
     </summary>
     
     
-      <category term="JavaScript" scheme="http://snoopbobb.com/blog/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://snoopbobb.com/tags/JavaScript/"/>
     
-      <category term="Web Developmet" scheme="http://snoopbobb.com/blog/tags/Web-Developmet/"/>
+      <category term="Web Developmet" scheme="http://snoopbobb.com/tags/Web-Developmet/"/>
     
   </entry>
   
   <entry>
     <title>Hello, World!</title>
-    <link href="http://snoopbobb.com/blog//Hello-World"/>
-    <id>http://snoopbobb.com/blog//Hello-World</id>
+    <link href="http://snoopbobb.com//Hello-World"/>
+    <id>http://snoopbobb.com//Hello-World</id>
     <published>2017-01-01T21:15:00.000Z</published>
     <updated>2017-03-26T22:37:44.000Z</updated>
     
@@ -241,12 +241,12 @@ getStarWarsPeople().then(processStarWarsPeople);
     
     </summary>
     
-      <category term="general" scheme="http://snoopbobb.com/blog/categories/general/"/>
+      <category term="general" scheme="http://snoopbobb.com/categories/general/"/>
     
     
-      <category term="Happy New Year" scheme="http://snoopbobb.com/blog/tags/Happy-New-Year/"/>
+      <category term="Happy New Year" scheme="http://snoopbobb.com/tags/Happy-New-Year/"/>
     
-      <category term="2017" scheme="http://snoopbobb.com/blog/tags/2017/"/>
+      <category term="2017" scheme="http://snoopbobb.com/tags/2017/"/>
     
   </entry>
   
