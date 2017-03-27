@@ -166,7 +166,7 @@ getStarWarsPeople().then(processStarWarsPeople);
         }
     &lt;/script&gt;
 &lt;/html&gt;
-</code></pre><h2 id="One-More-Problem"><a href="#One-More-Problem" class="headerlink" title="One More Problem"></a>One More Problem</h2><p>Promises are awesome, except they will not work in Internet Explorer, even IE11. Try not to act surprised. Thankfully, there is a very easy solution to get them to work in IE. You bring in <a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank" rel="external">Blubird.js</a>. It’s a promise library and only needs to be brought in before you start using your promises.</p>
+</code></pre><h2 id="One-More-Problem"><a href="#One-More-Problem" class="headerlink" title="One More Problem"></a>One More Problem</h2><p>Promises are awesome, except they will not work in Internet Explorer, not even IE11. Try not to act surprised. Thankfully, there is a very easy solution to get them to work in IE. You bring in <a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank" rel="external">Blubird.js</a>. It’s a promise library and only needs to be brought in before you start using your promises.</p>
 <pre><code>&lt;script src=&quot;//cdn.jsdelivr.net/bluebird/latest/bluebird.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;The rest of your JS that uses promises&lt;/script&gt;
 </code></pre><h2 id="The-Conclusion"><a href="#The-Conclusion" class="headerlink" title="The Conclusion"></a>The Conclusion</h2><p>I really hope you learned something from this article. JavaScript promises are difficult to understand, at least for me. Remember, keep your JavaScript asynchronous, and let your users be happy! </p>
