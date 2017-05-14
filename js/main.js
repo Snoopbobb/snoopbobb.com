@@ -15,6 +15,11 @@ $(function(){
 
 	});
 
+	$('#not-live').click(function(e) {
+		e.preventDefault();
+		alert('This site is no longer live. Sorry for the inconvenience.');
+	});
+
 
 	// // Portfolio slide in during scroll down
 	// $(window).scroll(function() {    
