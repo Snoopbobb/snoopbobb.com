@@ -1,5 +1,5 @@
 $dark-gray: #555;
-$orange: #FF7300; 
+$orange: #FF7300;
 $mobile: "(min-width: 900px)";
 
 /*************************************************************
@@ -16,297 +16,307 @@ $mobile: "(min-width: 900px)";
             General Styles
 *************************************/
 body {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: $dark-gray;
-  background: url(../images/noisy.png);
-  background-attachment: fixed;
-  text-align: center;
-  overflow-x: hidden; 
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $dark-gray;
+    background: url(../images/noisy.png);
+    background-attachment: fixed;
+    text-align: center;
+    overflow-x: hidden;
 }
 
 *:focus {
-  outline: 0; 
+    outline: 0;
 }
 
-h1, h2 {
-  font-weight: 900;
-  margin: 0;
-  padding: 0; 
+h1,
+h2 {
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
 }
 
-a, a:hover, a.button {
-  color: white;
-  text-decoration: none !important;
+a,
+a:hover,
+a.button {
+    color: white;
+    text-decoration: none !important;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .hide {
-  display: none; 
+    display: none;
 }
 
 /*************************************
           Social Media Styles
 *************************************/
 .social-media {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 10; 
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
 }
 
-.social-media i , .social-media i:visited {
-  color: white;
-  display: block;
+.social-media i,
+.social-media i:visited {
+    color: white;
+    display: block;
 }
 
-.social-media i:hover, .social-media i:active {
-  color: $orange; 
+.social-media i:hover,
+.social-media i:active {
+    color: $orange;
 }
 
 .fa-chevron-up {
-  position: fixed;
-  bottom: 10px; 
+    position: fixed;
+    bottom: 10px;
 }
 
 /*************************************
         Banner Section Styles
 *************************************/
 .hero {
-  background-color: black;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/az.jpg);
-  background-size: cover;
-  min-height: 100vh;
-  color: white;
-  text-align: center;
-  font-family: Montserrat;
-  background-attachment: fixed; 
-  padding: 150px 40px;
+    background-color: black;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/az.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+    background-attachment: fixed;
+    padding: 150px 40px;
 }
 
 .hero-content {
-  font-weight: bolder;
-  text-transform: uppercase; 
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .hero-text {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .hero-text h1 {
-  font-size: 4em;
+    font-size: 4em;
 }
 
 .hero-text h2 {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .hero-content .button {
-  font-size: 20px; 
+    font-size: 20px;
 }
 
 .button {
-  background-color: transparent;
-  border-radius: 10px;
-  border: 2px solid white;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bolder;
-  text-align: center;
-  margin: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px;
 }
 
 .button:hover {
-  background-color: $orange;
-  color: black;
-  border: 2px solid transparent; 
+    background-color: $orange;
+    color: black;
+    border: 2px solid transparent;
 }
 
 /*************************************
           Portfolio Styles
 *************************************/
 .portfolio-wrapper {
-  background: url(../images/stardust.png);
-  background-color: gray;
-  background-attachment: fixed;
-  background-repeat: repeat-x;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
+    background: url(../images/stardust.png);
+    background-color: gray;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 
 .portfolio-item-hide {
-  display: block; 
+    display: block;
 }
 
 .portfolio-item {
-  min-height: 250px;
-  overflow: auto;
-  margin: 10px;
-  width: 95%;
-  text-align: center;
-  background-color: rgba(4, 4, 4, 0.2);
-  border-radius: 10px;
-  padding: 20px 10px;
+    min-height: 250px;
+    overflow: auto;
+    margin: 10px;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(4, 4, 4, 0.2);
+    border-radius: 10px;
+    padding: 20px 10px;
 }
 
 .portfolio-item img {
-  width: 90%;
-  border-radius: 10px;
-  padding: 10px;
+    border-radius: 10px;
+    height: 450px;
+    padding: 10px;
+    width: 90%;
 }
 
-.portfolio-item h3, .portfolio-item p, .portfolio-item a {
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-right: 10px; 
+.portfolio-item h3,
+.portfolio-item p,
+.portfolio-item a {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .portfolio-item h3 {
-  text-transform: uppercase;
-  font-size: 3em;
-  font-weight: 800;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  color: $orange; 
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 800;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: $orange;
 }
 
 .portfolio-item p {
-  color: white;
-  margin-bottom: 30px;
-  font-size: 18px; 
+    color: white;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 /*************************************
           About Section Styles
 *************************************/
 main {
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/gc.jpg);
-  background-size: cover;
-  min-height: 100vh;
-  color: white;
-  text-align: center;
-  font-family: Montserrat;
-  background-attachment: fixed;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(83, 14, 110, 0.65) 37%, rgba(0, 0, 0, 0.85) 55%, black 100%), url(../images/gc.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+    background-attachment: fixed;
 }
 
 main h3 {
-  font-size: 5em;
-  text-transform: uppercase;
-  font-weight: 800;
-  text-align: center; 
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
 }
 
 main a {
-  color: orange; 
+    color: orange;
 }
 
 main p {
-  font-size: 1.3em;
-  font-weight: bolder; 
+    font-size: 1.3em;
+    font-weight: bolder;
 }
 
 .about-wrapper {
-  background-color: #CCCCCC;
-  background: url(../images/noisy.png);
-  background-attachment: fixed;
-  padding: 0 40px;
+    background-color: #CCCCCC;
+    background: url(../images/noisy.png);
+    background-attachment: fixed;
+    padding: 0 40px;
 }
 
 .about-content-hide {
-  display: none; 
+    display: none;
 }
 
 .about {
-  color: black;
-  padding: 60px;
-  text-align: left;
-  font-weight: bolder;
-  line-height: 1.5;
+    color: black;
+    padding: 60px;
+    text-align: left;
+    font-weight: bolder;
+    line-height: 1.5;
 }
 
 .about p {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .about a {
-  color: $orange;
+    color: $orange;
 }
 
 .about a:hover {
-  color: white;
+    color: white;
 }
 
 div.clear {
-  clear: both;
-  margin: 0;
-  padding: 0; 
+    clear: both;
+    margin: 0;
+    padding: 0;
 }
 
 main li {
-  list-style-type: none;
-  font-size: 1.7em;
-  padding: 10px;
-  font-weight: 800;
+    list-style-type: none;
+    font-size: 1.7em;
+    padding: 10px;
+    font-weight: 800;
 }
 
 .skills {
-  padding: 40px;
+    padding: 40px;
 }
 
 .skills p {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 /*************************************
             Footer Styles
 *************************************/
 footer {
-  position: relative;
-  padding: 40px 40px 0 40px;
-  min-height: 200px;
-  background-color: black;
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-  overflow: auto; 
+    position: relative;
+    padding: 40px 40px 0 40px;
+    min-height: 200px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    overflow: auto;
 }
 
 .footer-content-hide {
-  display: block; 
+    display: block;
 }
 
-footer h3, h4, h5 {
-  font-size: 3em;
-  text-transform: uppercase;
-  font-weight: bolder;
-  text-align: center; 
+footer h3,
+h4,
+h5 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
 }
 
 footer h4 {
-  font-size: 2em;
-  padding: 0;
-  margin: 0;
-  display: block; 
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
 footer h5 {
-  font-size: 1.5em;
-  padding: 0;
-  margin: 0 25px 0 0;
-  display: block; 
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0 25px 0 0;
+    display: block;
 }
 
 footer a {
-  color: #FF7300;
+    color: #FF7300;
 }
 
 footer #copy {
-  margin-top: 80px;
+    margin-top: 80px;
 }
 
 /*************************************************************
@@ -314,28 +324,28 @@ footer #copy {
 **************************************************************/
 @media #{$mobile} {
 
-  .hero-text h1 {
-    font-size: 10em;
-  }
+    .hero-text h1 {
+        font-size: 10em;
+    }
 
-  .hero-text h2 {
-    font-size: 8em;
-  }
+    .hero-text h2 {
+        font-size: 8em;
+    }
 
-  .portfolio-item img {
-    float: left;
-    width: 60%;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 40px;
-  }
+    .portfolio-item img {
+        float: left;
+        width: 60%;
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 40px;
+    }
 
-  .portfolio-item p {
-    text-align: left;
-  }
+    .portfolio-item p {
+        text-align: left;
+    }
 
-  .skill-content {
-    float: left;
-    width: 30%;
-  }
+    .skill-content {
+        float: left;
+        width: 30%;
+    }
 }
